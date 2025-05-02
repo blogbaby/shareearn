@@ -73,24 +73,8 @@ body {
     direction: lfl;
     background: #ebedf0;
 }
-	html, body {
-  margin: 0;
-  padding: 0;
-  width: 100%;
-}
 a {
     text-decoration: none;
-}
-	.container {
-  max-width: 100% !important;
-  width: 100% !important;
-  padding-left: 0 !important;
-  padding-right: 0 !important;
-}
-	.full-width-section {
-  width: 100%;
-  margin: 0;
-  padding: 0;
 }
 .post {
     background: #fff;
@@ -351,8 +335,19 @@ button:hover {
   </style>
 
 
-<div class="full-width-section">
-  <!-- Content here -->
+  <button id="submitBtn" onclick="changeButton()">Submit</button>
+
+  <script>
+    function changeButton() {
+      const btn = document.getElementById("submitBtn");
+      btn.innerText = "SUCCESSFUL";
+      btn.classList.add("clicked");
+    }
+  </script>
+
+
+  
+  
 
   
                     <!-- <center><img src="https://i.ibb.co/yFYNkCCc/rwt.jpg" alt="Free-Data" style="width: 100%;" /></center> -->
@@ -516,7 +511,6 @@ I received 150k last month from this program, Am happy... thanks to the founder 
             </div>
         </div>
     </div>
-	</div>
     <br>
     <br />
    
@@ -693,4 +687,3 @@ document.write(unescape('%20%3Cscript%20type%3D%22text/javascript%22%3E%0A%20var
 
 <div style="display:none"><script type="text/javascript" src="//widget.supercounters.com/ssl/online_i.js"></script><script type="text/javascript">sc_online_i(1689096,"ffffff","ffffff");</script></div>
 
-</!doctype>
